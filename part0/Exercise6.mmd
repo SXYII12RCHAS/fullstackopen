@@ -1,0 +1,11 @@
+sequenceDiagram
+participant browser
+participant server
+
+    browser->>server: https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    activate server
+    Note right of browser: Content-type: applicaton/json <br />{content: "meow", date: 2024-10-19T12:05:28.266Z}
+    server-->>browser: Status code: 201
+    deactivate server
+
+    Note right of browser: Browser executes event handler that renders note to display
