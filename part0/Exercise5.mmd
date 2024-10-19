@@ -21,7 +21,7 @@ participant server
 
     browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->>browser: [{ content: "meow", date: "024-10-19" }]
+    server-->>browser: [{ content: "meow", date: "2024-10-19" }]
     deactivate server
 
     Note right of browser: Browser executes event handler that renders note to display
